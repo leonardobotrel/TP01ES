@@ -60,8 +60,8 @@ O APP deve suportar o acesso simultaneo de 500 usuarios, contando com os funcion
 
 Número |	Benefício |	Valor para o cliente
 --------- | ------ | ------
-1| 		Rapidez no atendimento| 	O cliente, caso escolha utilizar o aplicativo, não precisa ficar esperando que o garçom vá até sua mesa, pode fazer o pedido direto, fazendo com que seu pedido chegue mais rápido do que num atendimento normal. |
-2	| 	Preservação do meio ambiente | 	Tanto o cliente quanto a empresa contratante estarão contribuindo para o meio ambiente, pois o aplicativo reduzirá os gastos de papéis em bares/restaurantes.
-3	|  Agilidade	| O cliente não precisará ligar para o restaurante para fazer reservas de mesas, poderá fazer isso com um clique, dispensando o uso de ligações e problemas como linha ocupada, stress com o atendente, etc.
+1| 		Rapidez no atendimento| 	Futuramente, o Sistema contara com uma atendente virtual, que ajudara no processo de aquisicao do imovel. |
+2	| 	Preservação do meio ambiente | 	Tanto o cliente quanto a empresa contratante estarão contribuindo para o meio ambiente, pois o aplicativo reduzirá os gastos de papéis como panfleto.
+3	|  Agilidade	| O Cliente ganha tempo e comodidade para conhecer os imoveis disponiveis pela imobiliaria, sendo possivel visualizar os imoveis de qualquer lugar conectado a internet,assim, nao precisara necessariamente a principio de marcar uma visita junto ao corretor para ver o imovel.
 
 
