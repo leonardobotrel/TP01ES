@@ -54,7 +54,14 @@ RD-01	|O APP deverá funcionar nas seguintes plataformas: Android e IOS
 RD-02	|Para acessar o APP, o cliente/funcionário deverá estar autenticado e ter acesso à internet.
 
 #### 1.2.8.	Limites do produto
-O APP deve suportar o cadastro de, no máximo, 3000 clientes e 50 funcionários.
-Caso haja mais clientes a serem cadastrado, o sistema deverá verificar automaticamente aqueles que não são muito frequentes e substituí-los pelos novos clientes.
+O APP deve suportar o acesso simultaneo de 500 usuarios, contando com os funcionarios.
+
+#### 1.2.9.	Benefícios do produto
+
+Número |	Benefício |	Valor para o cliente
+--------- | ------ | ------
+1| 		Rapidez no atendimento| 	O cliente, caso escolha utilizar o aplicativo, não precisa ficar esperando que o garçom vá até sua mesa, pode fazer o pedido direto, fazendo com que seu pedido chegue mais rápido do que num atendimento normal. |
+2	| 	Preservação do meio ambiente | 	Tanto o cliente quanto a empresa contratante estarão contribuindo para o meio ambiente, pois o aplicativo reduzirá os gastos de papéis em bares/restaurantes.
+3	|  Agilidade	| O cliente não precisará ligar para o restaurante para fazer reservas de mesas, poderá fazer isso com um clique, dispensando o uso de ligações e problemas como linha ocupada, stress com o atendente, etc.
 
 
