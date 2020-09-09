@@ -34,3 +34,27 @@ REQ-06 | Para todos imoveis cadastrados,deve ser obrigatorio inserir o endereco 
 REQ-07  | O Cliente podera fazer busca por imoveis disponiveis fazendo uma busca por bairros.
 REQ-08 | Se o cliente nao encontrar o bairro desejado na lista de bairros ja cadastrados, deve ser possivel digitar o bairro em um campo outros.
 REQ-09 | A caixa de texto "outros" ,para busca de bairro que nao foram encontrados na lista ja cadastrada no sistema, somente devera ser mostrada em casa de selecao da opcao "outros" na lista de bairros disponiveis.
+
+
+#### 1.2.4.	Relação de Regras de Negócio
+Número   | Descrição
+--------- | ------
+RN-01 | Cadastro de Imoveis:Devera ser possivel cadastrar imoveis na modalidade:Casa e Apartamento,atentando -se as informacoes obrigatorias para cada tipo de imovel, o preco deve ser obrigatorio informar.
+Rn-02 |Busca por Imoveis Disponiveis: Quando o Cliente desejar fazer uma busca por imoveis disponiveis, devera estar disponivel uma caixa de texto para informar o bairro que deseja selecionar para busca .
+
+#### 1.2.6.	Requisitos de Usabilidade
+Número  |	Descrição
+--------- | ------
+RU-01|	A plataforma estara disponivel para visualizacao no formato Desktop e Mobile. Sendo responsiva nos dois modos.
+
+#### 1.2.7.	Requisitos de Desempenho
+Número  |	Descrição
+--------- | ------
+RD-01	|O APP deverá funcionar nas seguintes plataformas: Android e IOS
+RD-02	|Para acessar o APP, o cliente/funcionário deverá estar autenticado e ter acesso à internet.
+
+#### 1.2.8.	Limites do produto
+O APP deve suportar o cadastro de, no máximo, 3000 clientes e 50 funcionários.
+Caso haja mais clientes a serem cadastrado, o sistema deverá verificar automaticamente aqueles que não são muito frequentes e substituí-los pelos novos clientes.
+
+
