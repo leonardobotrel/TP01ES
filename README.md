@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-#
+
 # Trabalho 1 – Laboratório de Engenharia de Software I
 
 # Especificação de Requisitos do Software
-=======
+
  
 # Trabalho 1 – Laboratório de Engenharia de Software I
 
