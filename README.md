@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 #
 # Trabalho 1 – Laboratório de Engenharia de Software I
 
 # Especificação de Requisitos do Software
+=======
+ 
+# Trabalho 1 – Laboratório de Engenharia de Software I
+
+## Especificação de Requisitos do Software
+>>>>>>> 0f1b9e7cbaa468421098a41f01491ad2f57dad9c
 ### Especificação do Software
 #### SISMOB
 # 1.Introducao
