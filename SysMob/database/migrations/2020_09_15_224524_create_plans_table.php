@@ -13,8 +13,21 @@ class CreatePlansTable extends Migration
      */
     public function up()
     {
-        Schema::create('plans', function (Blueprint $table) {
+        Schema::create('Imoveis', function (Blueprint $table) {
             $table->id();
+            $table->integer('tipo');
+            $table->integer('qtdquartos');
+            $table->integer('qtdsuites');
+            $table->integer('qtdsalasestar');
+            $table->integer('qtdvagasgaragem');
+            $table->double('area');
+            $table->boolean('armariosembutidos');
+            $table->string('descricao');
+            $table->integer('qtdsalasjantar');
+            $table->integer('qtdsuites');
+            $table->integer('andar');
+            $table->double('valorcondominio');
+            $table->boolean('portaria24h');
             $table->timestamps();
         });
     }
