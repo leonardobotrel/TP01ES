@@ -28,6 +28,7 @@ class CreatePlansTable extends Migration
             $table->integer('andar');
             $table->double('valorcondominio');
             $table->boolean('portaria24h');
+            $table->double('preco');
             $table->timestamps();
         });
     }
