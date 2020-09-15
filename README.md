@@ -62,6 +62,6 @@ Número |	Benefício |	Valor para o cliente
 --------- | ------ | ------
 1| 		Rapidez no atendimento| 	Futuramente, o Sistema contara com uma atendente virtual, que ajudara no processo de aquisicao do imovel. |
 2	| 	Preservação do meio ambiente | 	Tanto o cliente quanto a empresa contratante estarão contribuindo para o meio ambiente, pois o aplicativo reduzirá os gastos de papéis como panfleto.
-3	|  Agilidade	| O Cliente ganha tempo e comodidade para conhecer os imoveis disponiveis pela imobiliaria, sendo possivel visualizar os imoveis de qualquer lugar conectado a internet,assim, nao precisara necessariamente a principio de marcar uma visita junto ao corretor para ver o imovel.
+3	|  Agilidade	| O Cliente ganha tempo e comodidade para conhecer os imoveis disponiveis pela imobiliaria, sendo possivel visualizar os imoveis de qualquer lugar conectado a internet,assim, nao sera necessario a principio de marcar uma visita junto ao corretor para ver o imovel.
 
 
