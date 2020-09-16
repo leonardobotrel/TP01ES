@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePlansTable extends Migration
+class CreateImoveisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -17,7 +17,6 @@ class CreatePlansTable extends Migration
             $table->id();
             $table->integer('tipo');
             $table->integer('qtdquartos');
-            $table->integer('qtdsuites');
             $table->integer('qtdsalasestar');
             $table->integer('qtdvagasgaragem');
             $table->double('area');
@@ -28,7 +27,14 @@ class CreatePlansTable extends Migration
             $table->integer('andar');
             $table->double('valorcondominio');
             $table->boolean('portaria24h');
-            $table->double('preco');
+            $table->double('preco', 10, 2);
+            $table->string('rua');
+            $table->string('Bairro');
+            $table->string('Cidade');
+            $table->string('Estados');
+            $table->string('Pais');
+            $table->integer('Numero');
+            $table->string('Complemento');
             $table->timestamps();
         });
     }
@@ -40,6 +46,6 @@ class CreatePlansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('plans');
+        Schema::dropIfExists('Imoveis');
     }
 }
