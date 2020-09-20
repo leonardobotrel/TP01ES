@@ -15,11 +15,11 @@ class CreateImoveisTable extends Migration
     {
         Schema::create('Imoveis', function (Blueprint $table) {
             $table->id();
-            $table->integer('tipo');
+            $table->integer('tipo'); //1Casa 2 para apartamento
             $table->integer('qtdquartos');
             $table->integer('qtdsalasestar');
             $table->integer('qtdvagasgaragem');
-            $table->double('area');
+            $table->double('area', 10, 2);
             $table->boolean('armariosembutidos');
             $table->string('descricao');
             $table->integer('qtdsalasjantar');
