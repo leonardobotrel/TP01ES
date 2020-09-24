@@ -21,7 +21,7 @@ class ImoveisController extends Controller
     public function visualizar()
     {
 
-        $imoveis = $this->repository->all();
+        $imoveis = $this->repository->paginate();
         return view('visualizar', [
             'imoveis' => $imoveis,
         ]);
