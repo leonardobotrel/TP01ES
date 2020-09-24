@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'Cadastro')
 
 @section('content_header')
 <h1>Bem vindo!</h1>
