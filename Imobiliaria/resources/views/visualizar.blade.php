@@ -10,7 +10,7 @@
 <p>Listagem de todos os Imoveis disponiveis.</p>
 <div class="card">
     <div class="card-header">
-        #filtros
+        Utilizaremos os filtros aqui , como o filtro de Bairro, ou talvez de precos
     </div>
 
     <div class="card-body">
