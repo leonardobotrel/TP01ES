@@ -6,5 +6,7 @@
             "email": "marcos_mjsx@hotmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "jeroennoten/laravel-adminlte": "^3.4"
+    }
 }
