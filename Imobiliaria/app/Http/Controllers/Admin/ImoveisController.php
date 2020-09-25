@@ -26,4 +26,9 @@ class ImoveisController extends Controller
             'imoveis' => $imoveis,
         ]);
     }
+    public function cadastrocasa()
+    {
+
+        return view('cadastroCasa');
+    }
 }

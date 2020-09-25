@@ -3,7 +3,7 @@
 @section('title', 'Visualizacao de Imoveis')
 
 @section('content_header')
-<h1>Visualizacao de Imoveis da Sysmob <a href="cadastrar" class="btn btn-outline-dark">Adicionar Imovel</a></h1>
+<h1>Visualizacao de Imoveis da Sysmob </h1>
 @stop
 
 @section('content')
