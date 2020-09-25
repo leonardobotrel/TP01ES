@@ -15,17 +15,11 @@
                 <div class="col-sm-3">
                     <h4 slot="header" class="card-title">Selecione o tipo de imóvel:</h4>
                 </div>
-                <div class="col-sm-9">
-                    <div class="form-check-inline">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">Casa
-                        </label>
-                    </div>
-                    <div class="form-check-inline">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">Apartamento
-                        </label>
-                    </div>
+                <div class="col-sm-1">
+                    <button type="button" class="btn btn-primary" onclick="mostrarCasa()">Casa</button>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-primary" onclick="mostrarApartamento()">Apartamento</button>
                 </div>
             </div>
             <div class="row">
@@ -75,7 +69,7 @@
                             <div class="invalid-feedback" style="margin-left: 1.25em">Por favor preencha este campo</div>
                         </div>
                     </div>
-                    <div>
+                    <div id="apartamento">
                         <div class="form-group">
                             <label for="sala_jantar">Número de salas de jantar</label>
                             <input type="number" class="form-control" id="sala_jantar" placeholder="Entre com o n° de salas de jantar" name="nsala_jantar" required>
@@ -185,6 +179,15 @@
                             });
                         }, false);
                     })();
+
+                    function mostrarCasa() {
+                        var exibir = document.getElementById("apartamento");
+                        exibir.style.display = "none";
+                    }
+                    function mostrarApartamento() {
+                        var exibir = document.getElementById("apartamento");
+                        exibir.style.display = "block";
+                    }
                 </script>
             </div>
           </card>
