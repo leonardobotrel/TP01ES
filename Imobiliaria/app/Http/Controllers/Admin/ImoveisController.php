@@ -21,7 +21,24 @@ class ImoveisController extends Controller
     public function visualizar()
     {
 
-        $imoveis = $this->repository->all();
+        $imoveis = $this->repository->latest()->paginate(10);
+        return view('visualizar', [
+            'imoveis' => $imoveis,
+        ]);
+    }
+
+    public function detalhe($id)
+    {
+        $imovel = $this->repository->where('id', $id)->first();
+        if (!$id)
+            return redirect()->back();
+        return view('detalhes', [
+            'imovel' => $imovel,
+        ]);
+    }
+    public function search(Request $request)
+    {
+        $imoveis = $this->repository->search($request->filter);
         return view('visualizar', [
             'imoveis' => $imoveis,
         ]);
