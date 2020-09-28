@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>SYSMOB</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -13,7 +13,7 @@
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                color: #171e22;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -49,7 +49,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #1073a5;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -62,6 +62,10 @@
                 margin-bottom: 30px;
             }
         </style>
+        <div>
+            <a href="visualizar " class="btn btn-outline-success" role="button" aria-pressed="true"> <i class="fas fa-plus">  <i class="far fa-eye"></i> </i>  Visualizar Imoveis</a>
+           
+        </div>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -72,6 +76,10 @@
                 </div>
                 A sua nova maneira de alugar um imovel
             </div>
+            
+        </div>
+        
+        <div>  
         </div>
     </body>
 </html>
