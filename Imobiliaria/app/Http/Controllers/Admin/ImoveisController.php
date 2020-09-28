@@ -14,9 +14,38 @@ class ImoveisController extends Controller
     {
         $this->repository = $imoveis;
     }
-    public function cadastrar()
+    public function showCadastrar()
     {
         return view('cadastro');
+    }
+    public function postCadastrar(Request $dados)
+    {
+        $add = new Imoveis;
+        $add->tipo = $dados->ncasaapto;
+        $add->qtdquartos = $dados->nquartos;
+        $add->qtdsalasestar = $dados->nsala_estar;
+        $add->qtdvagasgaragem = $dados->nvagas_garagem;
+        $add->area = $dados->narea;
+        $add->armariosembutidos = $dados->varmario;
+        $add->descricao = $dados->ndescricao;
+        $add->qtdsalasjantar = $dados->nsala_jantar;
+        $add->qtdsuites = $dados->nsuites;
+        $add->andar = $dados->nandar;
+        $add->valorcondominio = $dados->nvalor_condominio;
+        $add->portaria24h = $dados->pportaria;
+        $add->preco = $dados->nvalor_aluguel;
+        $add->rua = $dados->nrua;
+        $add->Bairro = $dados->nbairros;
+        $add->Cidade = $dados->ncidade;
+        $add->CEP = $dados->ncep;
+        $add->Estados = $dados->nestado;
+        $add->Pais = $dados->npais;
+        $add->Numero = $dados->nnumero;
+        $add->save();
+        echo '<script language="javascript">';
+        echo 'alert("Cadastro realizado com sucesso.")'; 
+        echo '</script>';
+        return redirect()->action('Admin\ImoveisController@visualizar');
     }
     public function visualizar()
     {
