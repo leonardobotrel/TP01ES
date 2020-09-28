@@ -70,21 +70,8 @@
                
                 <li><strong>Estado : {{ $imovel->Estados}}</strong></li>
                 <li><strong>Pais : {{$imovel->Pais}}</strong></li>
-               <li> <strong>Valor do Aluguel do Imovel:</strong>
             
-            <li>
-                <strong>Cidade:</strong> {{ $imovel->Cidade}}
-            </li>
-            <li>
-                <strong>Bairro:</strong> {{ $imovel->Bairro}}
-            </li>
-            <li>
-                <strong>Estado</strong> {{ $imovel->Estados}}
-            </li>
-
-            <li>
-                <strong>Pais:</strong> {{$imovel->Pais}}
-            </li> 
+         
             
         </ul>
         
