@@ -12,11 +12,8 @@
     <div class="card-header">
         <form action="{{route('imovel.search')}}" metohd="POST" class="form form-inline">
             @csrf
-            <input type="text" name="filter" class="form-control" placeholder="Bairro">
-            <button type="submit" class="btn btn-dark">Filtrar</button>
-
-
-
+            <input type="text" style="width=10px" name="filter" class="form-control" placeholder="Pesquise por Bairro ou descricao">
+            <button type="submit" class="btn btn-dark"><i class="fas fa-filter"></i></button>
         </form>
     </div>
     <div class="card-body">
@@ -25,24 +22,33 @@
                 @foreach ($imoveis as $imovel)
                 <tr>
                     <div>
-                        <div>
-                            <th> Area:</th>
-                            <td> {{$imovel->area}}</td>
+                         <ul>
+                                <th>
+                                    <li>
+                                        Bairro: {{ $imovel->Bairro}}
+                                    </li>
+                        
+                                    <li>
+                                        Area: {{ $imovel->area}} m²
+                                    </li>
+                        
+                                    <li>
+                                        Quantidade de Quartos: {{$imovel->qtdquartos}}
+                                    </li>
+                        
+                                    <li>
+                                        Descricao: {{$imovel->descricao}}
+                                    </li>
+                                </th>
+                             
+                            </ul>
                         </div>
-                        <div>
-                            <th> Quantidade de Quartos :</th>
-                            <td> {{$imovel->qtdquartos}}</td>
-                        </div>
-                        <div>
-                            <th> Bairro :</th>
-                            <td> {{$imovel->Bairro}}</td>
-                        </div>
-                        <div>
-                            <td> {{$imovel->preco}}</td>
-                        </div>
+                       
                         <div width="10px">
                             <td style="width=50px;">
-                                <a href="{{route('imovel.detalhe',$imovel->id)}} class=" btn btn-warning"> + Informacoes</a>
+                              
+                                <a href="{{route('imovel.detalhe',$imovel->id)}} " class="btn btn-outline-success" role="button" aria-pressed="true"> <i class="fas fa-plus"></i>  Informacoes</a>
+
                             </td>
                         </div>
 

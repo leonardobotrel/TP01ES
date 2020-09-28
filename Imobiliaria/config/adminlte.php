@@ -229,11 +229,13 @@ return [
         [
             'text' => 'Imoveis Disponiveis',
             'url'  => 'visualizar',
+            'icon' => 'fas fa-eye',
 
         ],
         [
             'text' => 'Cadastrar Imoveis',
             'url'  => 'cadastrar',
+            'icon' =>  'fas fa-plus-circle'
 
         ],
     ],
