@@ -157,7 +157,15 @@
                             <option>Sagrada Família</option>
                             <option>Buritis</option>
                             <option>Padre Eustáquio</option>
+
+                
                         </datalist>
+                        @foreach($imoveis as $imoveis)
+                              <input  type="text" class="form-control" list="bairros" required name="nbairros"placeholder="Entre com o bairro" >
+                               <datalist id="bairros">
+                                 <option value="{{$imoveis->Bairro}}">
+                               </datalist>
+                        @endforeach 
                         <div class="valid-feedback">Válido</div>
                         <div class="invalid-feedback">Por favor preencha este campo</div>
                     </div>

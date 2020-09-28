@@ -16,7 +16,10 @@ class ImoveisController extends Controller
     }
     public function showCadastrar()
     {
-        return view('cadastro');
+        $imoveis = $this->repository->latest()->paginate(10);
+        return view('cadastro',[
+            'imoveis' => $imoveis,
+        ]);
     }
     public function postCadastrar(Request $dados)
     {
