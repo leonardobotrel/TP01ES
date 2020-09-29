@@ -156,17 +156,11 @@
                             @foreach ($Bairro as $Bairro)
                             <option>{{$Bairro->Nome}}</option>
                             @endforeach
-                          
-                            
                         </datalist>
                         <div class="valid-feedback">Válido</div>
                         <div class="invalid-feedback">Por favor preencha este campo</div>
                     </div>
-
-                    
-                       
                     </select>
-
                     <div class="form-group">
                         <label for="cidade">Cidade</label>
                         <input type="text" class="form-control"     id="cidade" placeholder="Entre com a cidade" name="ncidade" required>
