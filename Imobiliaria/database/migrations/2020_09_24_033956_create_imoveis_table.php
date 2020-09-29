@@ -12,7 +12,8 @@ class CreateImoveisTable extends Migration
      * @return void
      */
     public function up()
-    {
+    {    
+        
         Schema::create('imoveis', function (Blueprint $table) {
             $table->id();
             $table->integer('tipo'); //1Casa 2 para apartamento

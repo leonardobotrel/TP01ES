@@ -4,21 +4,26 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Imoveis;
+use App\Models\Bairro;
 use Illuminate\Http\Request;
 
 class ImoveisController extends Controller
 {
     private $repository;
 
-    public  function __construct(Imoveis $imoveis)
+    public  function __construct(Imoveis $imoveis ,Bairro $Bairro)
     {
         $this->repository = $imoveis;
+       // $this->repository = $Bairro;
     }
     public function showCadastrar()
     {
+        
+        $Bairro = Bairro::all();
         $imoveis = $this->repository->latest()->paginate(10);
         return view('cadastro',[
             'imoveis' => $imoveis,
+            'Bairro' => $Bairro,
         ]);
     }
     public function postCadastrar(Request $dados)

@@ -3,11 +3,11 @@
 @section('title', 'Cadastro')
 
 @section('content_header')
-<h1>Cadastrar imóvel</h1>
+<h1>Cadastrar imóvel </h1>
 @stop
 
 @section('content')
-<di>
+<div>
     <div class="row">
       <div class="col-sm-12">
           <card>
@@ -151,27 +151,25 @@
                     </div>
                     <div class="form-group">
                         <label for="bairro">Bairro</label>
-                        <input type="text" class="form-control" placeholder="Entre com o bairro" name="nbairros" list="bairros" required/>
+                        <input  type="text" class="form-control" list="bairros" required name="nbairros"placeholder="Entre com o bairro" >
                         <datalist id="bairros">
-                            <option>Centro</option>
-                            <option>Sagrada Família</option>
-                            <option>Buritis</option>
-                            <option>Padre Eustáquio</option>
-
-                
+                            @foreach ($Bairro as $Bairro)
+                            <option>{{$Bairro->Nome}}</option>
+                            @endforeach
+                          
+                            
                         </datalist>
-                        @foreach($imoveis as $imoveis)
-                              <input  type="text" class="form-control" list="bairros" required name="nbairros"placeholder="Entre com o bairro" >
-                               <datalist id="bairros">
-                                 <option value="{{$imoveis->Bairro}}">
-                               </datalist>
-                        @endforeach 
                         <div class="valid-feedback">Válido</div>
                         <div class="invalid-feedback">Por favor preencha este campo</div>
                     </div>
+
+                    
+                       
+                    </select>
+
                     <div class="form-group">
                         <label for="cidade">Cidade</label>
-                        <input type="text" class="form-control" id="cidade" placeholder="Entre com a cidade" name="ncidade" required>
+                        <input type="text" class="form-control"     id="cidade" placeholder="Entre com a cidade" name="ncidade" required>
                         <div class="valid-feedback">Válido</div>
                         <div class="invalid-feedback">Por favor preencha este campo</div>
                     </div>

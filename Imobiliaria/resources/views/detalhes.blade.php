@@ -31,6 +31,7 @@
             <li>                <strong>Pais : {{$imovel->Pais}}</strong></li>
             
         </ul>
+        @php
     </div>
 </div>
 @stop
