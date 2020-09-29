@@ -160,6 +160,10 @@
                         <div class="valid-feedback">Válido</div>
                         <div class="invalid-feedback">Por favor preencha este campo</div>
                     </div>
+
+
+      
+
                     </select>
                     <div class="form-group">
                         <label for="cidade">Cidade</label>
@@ -175,7 +179,13 @@
                     </div>
                     <div class="form-group">
                         <label for="estado">Estado</label>
-                        <input type="text" class="form-control" id="estado" placeholder="Entre com o estado" name="nestado" required>
+                        <input  type="text" class="form-control" list="estado" required name="estado"placeholder="Entre com o Estado" >
+                        <datalist id="estado">
+                            <option>Minas Gerais - MG</option>
+                            <option>Sao Paulo - SP</option>
+                            <option>Tocantis - TO</option>
+                            <option>Maranhao - MA</option>
+                        </datalist>
                         <div class="valid-feedback">Válido</div>
                         <div class="invalid-feedback">Por favor preencha este campo</div>
                     </div>
