@@ -151,24 +151,26 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="form-group">
-                        <div>
-                            <label for="Bairro">Bairro</label>
-                        </div>
-                            <select onchange="CheckOutro(this);">
-                                <option value="">Escolha o Bairro</option>
-                                @foreach ($Bairro as $Bairro)
-                                 <option value="{{$Bairro->Nome}}"> {{$Bairro->Nome}}</option>
-                                @endforeach  
-                                <option value="Outro">Outro</option>
-                                </select>   
-                                <div id="ifYes" style="display: none;">
-                                    <label for="Bairro">Digite o Bairro</label> 
-                                    <input  type="text" class="form-control" list="bairros" required name="nbairros"placeholder="Entre com o bairro" id="inputBairros" ><br />
+                          <div>
+                             <label for="bairro">Bairro</label>
                                 </div>
-                        <div class="valid-feedback">Válido</div>
-                        <div class="invalid-feedback">Por favor preencha este campo</div>
-                    </div>
+                                <input   onchange="CheckOutro(this);"  type="text" class="form-control" list="bairros" required name="nbairros"placeholder="Entre com o bairro" id="inputBairros">   
+                                <datalist id="bairros">
+                                    <option>Outros</option>
+                                    @foreach ($Bairro as $Bairro)
+                                       <option value="{{$Bairro->Nome}}"></option>
+                                    @endforeach                            
+                                </datalist>
+				                    <div id="ifYes" style="display: none;">
+                                             <label for="Bairro">Digite o Bairro</label> 
+                                             <input  type="text" class="form-control"required name="nbairros"placeholder="Entre com o bairro" id="inputBairros" ><br />
+                                    </div>
+                                <div class="valid-feedback">Válido</div>
+                                <div class="invalid-feedback">Por favor preencha este campo</div>
+                            </div>
+
                     <div class="form-group">
                         <label for="cidade">Cidade</label>
                         <input type="text" class="form-control"     id="cidade" placeholder="Entre com a cidade" name="ncidade" required>
@@ -186,32 +188,32 @@
                         <input  type="text" class="form-control" list="estado" required name="nestado"placeholder="Entre com o Estado" >
                         <datalist id="estado">
                         <option value="Acre">Acre - AC</option>
-                            <option value="Alagoas">  Alagoas - AL</option>
-                                <option value=" Amapá - AP">   Amapá - AP</option>
-                                    <option value="Amazonas - AM">   Amazonas - AM</option>
-                                        <option value=" Bahia - BA">  Bahia - BA</option>
-                                            <option value="Ceará - CE<">  Ceará - CE</option>
-                                                <option value="Espírito Santo - ES">   Espírito Santo - ES</option>
-                                                    <option value="Goiás - GO">   Goiás - GO</option>
-                                                        <option value="Maranhão - MA">  Maranhão - MA</option>
-                                                            <option value="Mato Grosso - MT">  Mato Grosso - MT</option>
-                                                                <option value="Mato Grosso do Sul - MS"> Mato Grosso do Sul - MS</option>
-                                                                    <option value="Minas Gerais - MG"> Minas Gerais - MG</option>
-                                                                        <option value="Pará - PA"> Pará - PA</option>
-                                                                            <option value="Paraíba - PB"> Paraíba - PB</option>
-                                                                                <option value="Paraná - PR"> Paraná - PR</option>
-                                                                                    <option value="Pernambuco - PE"> Pernambuco - PE</option>
-                                                                                        <option value="Piauí - PI"> Piauí - PI</option>
-                                                                                            <option value="Rio de Janeiro - RJ"> Rio de Janeiro - RJ</option>
-                                                                                                <option value="Rio Grande do Norte - RN"> Rio Grande do Norte - RN</option>
-                                                                                                    <option value="Rio Grande do Sul - RS"> Rio Grande do Sul - RS</option>
-                                                                                                        <option value=" Rondônia - RO"> Rondônia - RO</option>
-                                                                                                            <option value=" Roraima - RR"> Roraima - RR</option>
-                                                                                                                <option value="Santa Catarina - SC"> Santa Catarina - SC</option>
-                                                                                                                    <option value=" São Paulo - SP"> São Paulo - SP</option>
-                                                                                                                        <option value=" Sergipe - SE"> Sergipe - SE</option>
-                                                                                                                            <option value=" Tocantins - TO"> Tocantins - TO</option>
-                                                                                                                                <option value="Distrito Federal - DF"> Distrito Federal - DF</option>
+                        <option value="Alagoas">  Alagoas - AL</option>
+                        <option value=" Amapá - AP">   Amapá - AP</option>
+                       <option value="Amazonas - AM">   Amazonas - AM</option>
+                       <option value=" Bahia - BA">  Bahia - BA</option>
+                       <option value="Ceará - CE<">  Ceará - CE</option>
+                       <option value="Espírito Santo - ES">   Espírito Santo - ES</option>
+                        <option value="Goiás - GO">   Goiás - GO</option>
+                        <option value="Maranhão - MA">  Maranhão - MA</option>
+                      <option value="Mato Grosso - MT">  Mato Grosso - MT</option>
+                         <option value="Mato Grosso do Sul - MS"> Mato Grosso do Sul - MS</option>
+                      <option value="Minas Gerais - MG"> Minas Gerais - MG</option>
+                        <option value="Pará - PA"> Pará - PA</option>
+                     <option value="Paraíba - PB"> Paraíba - PB</option>
+                      <option value="Paraná - PR"> Paraná - PR</option>
+                    <option value="Pernambuco - PE"> Pernambuco - PE</option>
+                   <option value="Piauí - PI"> Piauí - PI</option>
+                   <option value="Rio de Janeiro - RJ"> Rio de Janeiro - RJ</option>
+                     <option value="Rio Grande do Norte - RN"> Rio Grande do Norte - RN</option>
+                     <option value="Rio Grande do Sul - RS"> Rio Grande do Sul - RS</option>
+                      <option value=" Rondônia - RO"> Rondônia - RO</option>
+                     <option value=" Roraima - RR"> Roraima - RR</option>
+                      <option value="Santa Catarina - SC"> Santa Catarina - SC</option>
+                    <option value=" São Paulo - SP"> São Paulo - SP</option>
+                    <option value=" Sergipe - SE"> Sergipe - SE</option>
+                    <option value=" Tocantins - TO"> Tocantins - TO</option>
+                    <option value="Distrito Federal - DF"> Distrito Federal - DF</option>
                         </datalist>
                         <div class="valid-feedback">Válido</div>
                         <div class="invalid-feedback">Por favor preencha este campo</div>
@@ -227,7 +229,24 @@
                 </form>
 
                 <script>
-                 
+                 // Disable form submissions if there are invalid fields
+                 (function() {
+                        'use strict';
+                        window.addEventListener('load', function() {
+                            // Get the forms we want to add validation styles to
+                            var forms = document.getElementsByClassName('needs-validation');
+                            // Loop over them and prevent submission
+                            var validation = Array.prototype.filter.call(forms, function(form) {
+                                form.addEventListener('submit', function(event) {
+                                    if (form.checkValidity() === false) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+                                    form.classList.add('was-validated');
+                                }, false);
+                            });
+                        }, false);
+                    })();
                     function mostrarCasa() {
                         var exibir = document.getElementById("apartamento");
                         exibir.style.display = "none";

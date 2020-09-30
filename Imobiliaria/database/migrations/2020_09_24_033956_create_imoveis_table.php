@@ -30,12 +30,13 @@ class CreateImoveisTable extends Migration
             $table->boolean('portaria24h')->nullable();
             $table->double('preco', 10, 2);
             $table->string('rua');
-            $table->string('Bairro');
+            $table->string('Bairro') ->nullable();
             $table->string('Cidade');
             $table->integer("CEP")->lenght(8);
             $table->string('Estados');
             $table->string('Pais');
             $table->integer('Numero');
+            $table->integer('NroApartamento');
             $table->timestamps();
         });
     }

@@ -43,7 +43,7 @@ class ImoveisController extends Controller
         $add->portaria24h = $dados->pportaria;
         $add->preco = $dados->nvalor_aluguel;
         $add->rua = $dados->nrua;
-        $add->Bairro = $dados->nbairros;
+        $add->Bairro = $dados->nbairros ;
         $add->Cidade = $dados->ncidade;
         $add->CEP = $dados->ncep;
         $add->Estados = $dados->nestado;

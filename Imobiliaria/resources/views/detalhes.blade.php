@@ -3,7 +3,7 @@
 @section('title', 'Detalhes do Imovel {{$imovel->id}}')
 
 @section('content_header')
-<h1>Detalhes do Imovel {{$imovel->id}}</h1>
+<h1>Detalhes do Imovel {{$imovel->id}} Valor do Aluguel = R$  {{ $imovel->preco}}</h1>
 @stop
 
 @section('content')

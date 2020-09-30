@@ -70,9 +70,9 @@
     <body>
         <div class="flex-center position-ref full-height">
         
-            <div class="content">
-                <div class="title m-b-md">
-                     Sysmob                    
+            <div class="content" a href="visualizar " >
+                <div class="title m-b-md" >
+                    <a href="visualizar " >  Sysmob                    </a>
                 </div>
                 A sua nova maneira de alugar um imovel
             </div>
