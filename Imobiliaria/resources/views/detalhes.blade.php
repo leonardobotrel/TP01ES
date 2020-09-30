@@ -24,14 +24,14 @@
             <li>                <strong>Valor do Aluguel do Imovel:</strong> {{$imovel->preco}}            </li> 
             <li>                <strong>Rua:</strong> {{$imovel->rua}}               </li> 
             <li>                <strong>Numero : </strong>{{$imovel->Numero}} </li>  
-            <li>                <strong>Complemento : {{$imovel->Complemento}} </strong>                 </li>
-            <li>                <strong>Bairro:  {{ $imovel->Bairro}}</strong>                </li>
-            <li>                <strong>Cidade: {{ $imovel->Cidade}} </strong></li>
-            <li>                <strong>Estado : {{ $imovel->Estados}}</strong></li>
-            <li>                <strong>Pais : {{$imovel->Pais}}</strong></li>
+            <li>                <strong>Complemento : {{$imovel->Complemento}}                 </li>
+            <li>                <strong>Bairro: </strong>  {{ $imovel->Bairro}}</strong>                </li>
+            <li>                <strong>Cidade: </strong> {{ $imovel->Cidade}} </strong></li>
+            <li>                <strong>Estado : </strong>{{ $imovel->Estados}}</strong></li>
+            <li>                <strong>Pais :</strong> {{$imovel->Pais}}</li>
             
         </ul>
-        @php
+ 
     </div>
 </div>
 @stop

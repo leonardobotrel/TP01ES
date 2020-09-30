@@ -54,6 +54,8 @@ class ImoveisController extends Controller
         echo 'alert("Cadastro realizado com sucesso.")'; 
         echo '</script>';
         return redirect()->action('Admin\ImoveisController@visualizar');
+
+        
     }
     public function visualizar()
     {

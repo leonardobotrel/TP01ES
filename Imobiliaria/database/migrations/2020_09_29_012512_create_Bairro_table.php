@@ -19,8 +19,6 @@ class CreateBairroTable extends Migration
             $table->string('Nome');
             $table->string('Uf');
             $table->timestamps();
-            
-            
         });
     }
 
