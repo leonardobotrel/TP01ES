@@ -150,23 +150,19 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="bairro">Bairro</label>
-                        <input  type="text" class="form-control" list="bairros" required name="nbairros"placeholder="Entre com o bairro" >
+                        <div>
+                            <label for="bairro">Bairro</label>
+                        </div>
+                        <input  type="text" class="form-control" list="bairros" required name="nbairros"placeholder="Entre com o bairro" id="inputBairros" >
                         <datalist id="bairros">
+                            <option>Outro</option>
                             @foreach ($Bairro as $Bairro)
-                            <option>{{$Bairro->Nome}}</option>
-                            @endforeach
-                          
-                            
+                            <option value="{{$Bairro->Nome}}"></option>
+                            @endforeach                            
                         </datalist>
                         <div class="valid-feedback">Válido</div>
                         <div class="invalid-feedback">Por favor preencha este campo</div>
                     </div>
-
-                    
-                       
-                    </select>
-
                     <div class="form-group">
                         <label for="cidade">Cidade</label>
                         <input type="text" class="form-control"     id="cidade" placeholder="Entre com a cidade" name="ncidade" required>
@@ -232,6 +228,7 @@
                         document.getElementById("portaria").required = true;
                         document.getElementById("casaapto2").checked="checked"
                     }
+
                 </script>
             </div>
           </card>
